@@ -8,6 +8,9 @@
 
 /* Begin PBXBuildFile section */
 		A29D14BB1C4970BB009D5545 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = A29D14BA1C4970BB009D5545 /* main.m */; };
+		A29D14C81C49722A009D5545 /* StringCalculatorKataTests.m in Sources */ = {isa = PBXBuildFile; fileRef = A29D14C71C49722A009D5545 /* StringCalculatorKataTests.m */; };
+		A29D14D21C497458009D5545 /* StringCalculator.m in Sources */ = {isa = PBXBuildFile; fileRef = A29D14D01C497458009D5545 /* StringCalculator.m */; };
+		A29D14D61C497921009D5545 /* StringCalculator.m in Sources */ = {isa = PBXBuildFile; fileRef = A29D14D01C497458009D5545 /* StringCalculator.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -25,10 +28,22 @@
 /* Begin PBXFileReference section */
 		A29D14B71C4970BB009D5545 /* StringCalculatorKata */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = StringCalculatorKata; sourceTree = BUILT_PRODUCTS_DIR; };
 		A29D14BA1C4970BB009D5545 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		A29D14C51C49722A009D5545 /* StringCalculatorKataTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = StringCalculatorKataTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		A29D14C71C49722A009D5545 /* StringCalculatorKataTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = StringCalculatorKataTests.m; sourceTree = "<group>"; };
+		A29D14C91C49722A009D5545 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A29D14D01C497458009D5545 /* StringCalculator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = StringCalculator.m; sourceTree = "<group>"; };
+		A29D14D11C497458009D5545 /* StringCalculator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StringCalculator.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
 		A29D14B41C4970BB009D5545 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A29D14C21C49722A009D5545 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -42,6 +57,7 @@
 			isa = PBXGroup;
 			children = (
 				A29D14B91C4970BB009D5545 /* StringCalculatorKata */,
+				A29D14C61C49722A009D5545 /* StringCalculatorKataTests */,
 				A29D14B81C4970BB009D5545 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -50,6 +66,7 @@
 			isa = PBXGroup;
 			children = (
 				A29D14B71C4970BB009D5545 /* StringCalculatorKata */,
+				A29D14C51C49722A009D5545 /* StringCalculatorKataTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -58,8 +75,19 @@
 			isa = PBXGroup;
 			children = (
 				A29D14BA1C4970BB009D5545 /* main.m */,
+				A29D14D01C497458009D5545 /* StringCalculator.m */,
+				A29D14D11C497458009D5545 /* StringCalculator.h */,
 			);
 			path = StringCalculatorKata;
+			sourceTree = "<group>";
+		};
+		A29D14C61C49722A009D5545 /* StringCalculatorKataTests */ = {
+			isa = PBXGroup;
+			children = (
+				A29D14C71C49722A009D5545 /* StringCalculatorKataTests.m */,
+				A29D14C91C49722A009D5545 /* Info.plist */,
+			);
+			path = StringCalculatorKataTests;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -82,6 +110,23 @@
 			productReference = A29D14B71C4970BB009D5545 /* StringCalculatorKata */;
 			productType = "com.apple.product-type.tool";
 		};
+		A29D14C41C49722A009D5545 /* StringCalculatorKataTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A29D14CA1C49722A009D5545 /* Build configuration list for PBXNativeTarget "StringCalculatorKataTests" */;
+			buildPhases = (
+				A29D14C11C49722A009D5545 /* Sources */,
+				A29D14C21C49722A009D5545 /* Frameworks */,
+				A29D14C31C49722A009D5545 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = StringCalculatorKataTests;
+			productName = StringCalculatorKataTests;
+			productReference = A29D14C51C49722A009D5545 /* StringCalculatorKataTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -92,6 +137,9 @@
 				ORGANIZATIONNAME = "Denys Khlivnyy";
 				TargetAttributes = {
 					A29D14B61C4970BB009D5545 = {
+						CreatedOnToolsVersion = 7.2;
+					};
+					A29D14C41C49722A009D5545 = {
 						CreatedOnToolsVersion = 7.2;
 					};
 				};
@@ -109,16 +157,37 @@
 			projectRoot = "";
 			targets = (
 				A29D14B61C4970BB009D5545 /* StringCalculatorKata */,
+				A29D14C41C49722A009D5545 /* StringCalculatorKataTests */,
 			);
 		};
 /* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		A29D14C31C49722A009D5545 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		A29D14B31C4970BB009D5545 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A29D14D21C497458009D5545 /* StringCalculator.m in Sources */,
 				A29D14BB1C4970BB009D5545 /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A29D14C11C49722A009D5545 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A29D14D61C497921009D5545 /* StringCalculator.m in Sources */,
+				A29D14C81C49722A009D5545 /* StringCalculatorKataTests.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -218,6 +287,28 @@
 			};
 			name = Release;
 		};
+		A29D14CB1C49722A009D5545 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = StringCalculatorKataTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = DKH.StringCalculatorKataTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		A29D14CC1C49722A009D5545 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = StringCalculatorKataTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = DKH.StringCalculatorKataTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -235,6 +326,14 @@
 			buildConfigurations = (
 				A29D14BF1C4970BB009D5545 /* Debug */,
 				A29D14C01C4970BB009D5545 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		A29D14CA1C49722A009D5545 /* Build configuration list for PBXNativeTarget "StringCalculatorKataTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A29D14CB1C49722A009D5545 /* Debug */,
+				A29D14CC1C49722A009D5545 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 		};

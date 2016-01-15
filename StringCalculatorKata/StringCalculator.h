@@ -1,5 +1,5 @@
 //
-//  main.m
+//  StringCalculator.h
 //  StringCalculatorKata
 //
 //  Created by Denys Khlivnyy on 1/15/16.
@@ -8,10 +8,9 @@
 
 #import <Foundation/Foundation.h>
 
-int main(int argc, const char * argv[]) {
-    @autoreleasepool {
-   
-        
-    }
-    return 0;
-}
+@interface StringCalculator: NSObject
+
+-(NSInteger)add:(NSString *)numbers;
+
+
+@end
